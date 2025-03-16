@@ -67,7 +67,7 @@ main {
   --color-canvas-default: transparent;
   --color-canvas-overlay: rgb(255 255 255 / 90%);
   --color-canvas-inset: transparent;
-  --color-canvas-subtle: #f8f9fa;
+  --color-canvas-subtle: transparent; /* Changed to transparent for code block background */
   --color-border-default: #e0e0e0;
   --color-border-muted: #f0f0f0;
   --color-neutral-muted: rgb(0 0 0 / 10%);
@@ -84,13 +84,42 @@ main {
   --color-danger-muted: rgb(229 83 75 / 40%);
   --color-danger-subtle: rgb(229 83 75 / 10%);
   --color-primer-shadow-inset: inset 0 1px 0 rgb(0 0 0 / 5%);
-  --color-scale-gray-7: #f6f8fa; /* Adjusted for light theme */
-  --color-scale-blue-8: #dbe9ff; /* Adjusted for light theme */
-  
+  --color-scale-gray-7: #f6f8fa;
+  --color-scale-blue-8: #dbe9ff;
+
   /*! Extensions from @primer/css/alerts/flash.scss */
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
 }
+
+/* Specific adjustments for reaction button and top panel */
+.reaction-button {
+  background-color: transparent;
+  border: 1px solid var(--color-border-default); /* Very light border */
+  color: var(--color-fg-default); /* Grayish text */
+}
+
+.comment-header {
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-border-muted); /* Very light bottom border */
+  color: var(--color-fg-muted); /* Grayish text for title */
+}
+
+/* Adjustments for code blocks in comments */
+.markdown-body pre,
+.markdown-body code,
+.highlight,
+.blob-code {
+  background-color: transparent !important; /* Force transparent background */
+  border: 1px solid var(--color-border-muted); /* Very light border */
+  color: var(--color-fg-default); /* Grayish text for code */
+}
+
+/* Ensure syntax highlighting colors are readable on transparent background */
+.highlight .comment { color: var(--color-prettylights-syntax-comment); }
+.highlight .keyword { color: var(--color-prettylights-syntax-keyword); }
+.highlight .string { color: var(--color-prettylights-syntax-string); }
+.highlight .variable { color: var(--color-prettylights-syntax-variable); }
 
 main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
