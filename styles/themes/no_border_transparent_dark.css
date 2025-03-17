@@ -98,7 +98,7 @@ main .gsc-loading-image {
 /* Additional styles for transparent backgrounds and subtle borders */
 .gsc-comment, .gsc-comment-box, .gsc-comment-box-tabs, .gsc-comment-box-textarea {
   background-color: transparent !important;
-  border: 1px solid rgba(235, 235, 245, 0.12) !important;
+  border: 0px solid rgba(235, 235, 245, 0.12) !important;
 }
 
 .gsc-comment-header, .gsc-comment-footer, .gsc-reactions, .gsc-reply-box {
@@ -107,8 +107,8 @@ main .gsc-loading-image {
 
 .gsc-comment-content {
   background-color: transparent !important;
-  border-top: 1px solid rgba(235, 235, 245, 0.08) !important;
-  border-bottom: 1px solid rgba(235, 235, 245, 0.08) !important;
+  border-top: 0px solid rgba(235, 235, 245, 0.08) !important;
+  border-bottom: 0px solid rgba(235, 235, 245, 0.08) !important;
 }
 
 .gsc-timeline {
@@ -116,16 +116,16 @@ main .gsc-loading-image {
 }
 
 .gsc-header {
-  border-bottom: 1px solid rgba(235, 235, 245, 0.08) !important;
+  border-bottom: 0px solid rgba(235, 235, 245, 0.08) !important;
 }
 
 .gsc-reactions-count {
   background-color: transparent !important;
-  border: 1px solid rgba(235, 235, 245, 0.08) !important;
+  border: 0px solid rgba(235, 235, 245, 0.08) !important;
 }
 
 .gsc-upvotes {
-  border: 1px solid rgba(235, 235, 245, 0.08) !important;
+  border: 0px solid rgba(235, 235, 245, 0.08) !important;
 }
 
 /* Additional styles for code blocks to maintain readability */
